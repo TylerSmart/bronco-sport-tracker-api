@@ -1,11 +1,13 @@
 {
   "name": "bronco-sport-tracker-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:debug": "nodemon --inspect=0.0.0.0:9229 src/server.ts"
+    "dev:debug": "nodemon --inspect=0.0.0.0:9229 src/server.ts",
+    "prestart": "tsc",
+    "start": "node ./dist/server.js"
   },
   "author": "",
   "license": "ISC",
